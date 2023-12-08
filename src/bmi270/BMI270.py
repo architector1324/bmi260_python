@@ -37,7 +37,7 @@ class BMI270:
     def write_register(self, register_address, byte_data) -> None:
             self.bus.write_byte_data(self.address, register_address, byte_data)
 
-    def load_config_file(self) -> None:
+    def load_config_file(self, config) -> None:
         if (self.read_register(INTERNAL_STATUS) == 0x01):
             print(hex(self.address), " --> Initialization already done")
         else:
@@ -48,11 +48,15 @@ class BMI270:
             for i in range(256):
                 self.write_register(INIT_ADDR_0, 0x00)
                 self.write_register(INIT_ADDR_1, i)
-                self.bus.write_i2c_block_data(self.address, INIT_DATA, bmi270_config_file[i*32:(i+1)*32])
+                self.bus.write_i2c_block_data(self.address, INIT_DATA, config[i*32:(i+1)*32])
                 sleep(0.000020)
             self.write_register(INIT_CTRL, 0x01)
             sleep(0.02)
         print(hex(self.address), " --> Initialization status: " + '{:08b}'.format(self.read_register(INTERNAL_STATUS)) + "\t(00000001 --> OK)")
+
+    def soft_reset(self):
+        self.write_register(CMD, 0xb6)
+        sleep(0.02)
 
     def set_mode(self, mode="performance") -> None:
         if (mode == "low_power"):

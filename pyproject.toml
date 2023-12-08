@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bmi270"
-version = "0.4.3"
-authors = [{name = "Kevin Sommler", email = "sommler@live.de"}]
-description = "BMI270 I2C Python library (bare bones)"
+name = "bmi260"
+version = "0.4.4"
+authors = [{name = "Kevin Sommler", email = "sommler@live.de"}, {name = "Oleg Sayakhov", email = "olegsajaxov@yandex.ru"}]
+description = "BMI260/BMI270 I2C Python library (bare bones)"
 readme = "README.md"
 requires-python = ">=3.7"
-keywords = ["BMI270", "I2C", "IMU", "sensor", "driver", "accelerometer", "gyroscope", "gyro", "bosch", "sensortech", "smbus2", "library"]
+keywords = ["BMI270", "BMI260", "I2C", "IMU", "sensor", "driver", "accelerometer", "gyroscope", "gyro", "bosch", "sensortech", "smbus2", "library"]
 license = { text = "MIT" }
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -23,5 +23,5 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/CoRoLab-Berlin/bmi270_python"
-"Bug Tracker" = "https://github.com/CoRoLab-Berlin/bmi270_python/issues"
+"Homepage" = "https://github.com/architector1324/bmi260_python"
+"Bug Tracker" = "https://github.com/architector1324/bmi260_python/issues"

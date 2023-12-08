@@ -1,13 +1,16 @@
-# BMI270 I2C Python Implementation - Version: 0.4.3
+# BMI260/BMI270 I2C Python Implementation - Version: 0.4.4
 
-Bare bones BMI270 I2C Python implementation. This was a project for my practical phase at my University and my first time working hands on with IMUs.
+Bare bones BMI260/BMI270 I2C Python implementation. This was a project for my practical phase at my University and my first time working hands on with IMUs.
+
+### Fork
+* Added BMI260 support
 
 ## Installation
-The package is [available on pypi.org](https://pypi.org/project/bmi270).
+The package is [available on pypi.org](https://pypi.org/project/bmi260).
 
 You can install this package using this command:
 
-`pip3 install bmi270`
+`pip3 install bmi260`
 
 For a Raspberry Pi Setup add/change this line in /boot/config.txt to your desired baudrate:
 
@@ -48,13 +51,14 @@ Manual installation:
 ## Functionality
 
 - BMI270 class integration
-- load config file into BMI270
+- load config file into BMI270/BMI260
 - write/read registers
 - a few other functions (see [BMI270.py](https://github.com/CoRoLab-Berlin/bmi270_python/blob/main/src/bmi270/BMI270.py))
 
 ## Credits & Related links
 
 - [serioeseGmbH/BMI160](https://github.com/serioeseGmbH/BMI160)
+- [Sean Abraham/chromiumos](https://chromium.googlesource.com/chromiumos/platform/ec/+/master/driver/accelgyro_bmi260.h)
 - [lefuturiste](https://github.com/lefuturiste/BMI160-i2c)
 - [BMI270 Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf)
 - [smbus2 docs](https://smbus2.readthedocs.io/en/latest/)
