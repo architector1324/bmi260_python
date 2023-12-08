@@ -3,9 +3,9 @@
 import socket
 import time
 
-from bmi270.BMI270 import *
+from bmi260.BMI270 import *
 
-# from src.bmi270.BMI270 import *
+# from src.bmi260.BMI270 import *
 
 
 # -------------------------------------------------

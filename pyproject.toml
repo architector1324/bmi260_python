@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bmi260"
-version = "0.4.4"
+version = "0.4.5"
 authors = [{name = "Kevin Sommler", email = "sommler@live.de"}, {name = "Oleg Sayakhov", email = "olegsajaxov@yandex.ru"}]
 description = "BMI260/BMI270 I2C Python library (bare bones)"
 readme = "README.md"

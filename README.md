@@ -1,4 +1,4 @@
-# BMI260/BMI270 I2C Python Implementation - Version: 0.4.4
+# BMI260/BMI270 I2C Python Implementation - Version: 0.4.5
 
 Bare bones BMI260/BMI270 I2C Python implementation. This was a project for my practical phase at my University and my first time working hands on with IMUs.
 
@@ -33,7 +33,7 @@ The BMI270 requires a config load. This initialization step is necessary to be a
 
 A full power cycle is necessary if you want to load the config again.
 
-Check out [examples](https://github.com/CoRoLab-Berlin/bmi270_python/tree/main/examples) for more information.
+Check out [examples](https://github.com/architector1324/bmi260_python/tree/main/examples) for more information.
 
 ## Tested with:
 - Ubuntu 22.04.2 LTS
@@ -53,7 +53,7 @@ Manual installation:
 - BMI270 class integration
 - load config file into BMI270/BMI260
 - write/read registers
-- a few other functions (see [BMI270.py](https://github.com/CoRoLab-Berlin/bmi270_python/blob/main/src/bmi270/BMI270.py))
+- a few other functions (see [BMI270.py](https://github.com/architector1324/bmi260_python/blob/main/src/bmi270/BMI270.py))
 
 ## Credits & Related links
 
